@@ -45,5 +45,16 @@ Classification Report (Precision, Recall, F1-Score)
 | False Negatives | **1** | 7 |
 | Macro Avg F1 | **0.81** | 0.75 |
 
-Logistic Regression outperformed the Decision Tree across every metric
+Logistic Regression outperformed the Decision Tree across every metric.
+
+Class Imbalance: ~69% approved (Y) vs ~31% rejected (N), the dataset is imbalanced, which directly impacted model recall for defaulters
+Loan Amount: Right-skewed with outliers up to 700K. Both approved and rejected applicants had similar distributions, making it a weak standalone predictor
+Education: Graduate applicants had a ~71% approval rate vs ~61% for non-graduates
+Income: Heavily right-skewed with many outliers. Income alone did not strongly separate approved from rejected applicants
+Credit History: The most influential feature — 84% of applicants had positive credit history, strongly correlated with loan approval
+
+**Limitations:**
+
+Low defaulter recall (0.58 for LR, 0.55 for DT)
+Nearly half of actual defaulters were wrongly approved due to class imbalance. This is a critical risk in real-world banking
             
