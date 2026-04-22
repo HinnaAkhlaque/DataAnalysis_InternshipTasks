@@ -20,18 +20,20 @@ Missing values were found across multiple columns such as:
 *Feature Selection*:
 features = ['ApplicantIncome', 'CoapplicantIncome', 'LoanAmount','Loan_Amount_Term', 'Credit_History']
 
-*Train-Test Split*:
-80% training / 20% testing
-stratify=y used to preserve the 69/31 class ratio in both splits.
+Train-Test Split
+- 80% Training / 20% Testing
+- `stratify=y` used to preserve the 69/31 class ratio in both splits
 
-*Models Trained*:
-Logistic Regression — max_iter=1000
-Decision Tree Classifier — max_depth=5
+### Models Trained
+| Model | Parameter |
+|---|---|
+| Logistic Regression | `max_iter=1000` |
+| Decision Tree Classifier | `max_depth=5` |
 
-*Evaluation Metrics*:
-Accuracy Score
-Confusion Matrix
-Classification Report (Precision, Recall, F1-Score)
+### Evaluation Metrics
+- Accuracy Score
+- Confusion Matrix
+- Classification Report (Precision, Recall, F1-Score)
 
 **Results & Insights:**
 | Metric | Logistic Regression | Decision Tree |
