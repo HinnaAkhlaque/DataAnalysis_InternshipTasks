@@ -10,12 +10,12 @@ Our target variable Loan_Status indicates:
 
 **Approach:**
 Missing values were found across multiple columns such as:
-| Column | Missing | Strategy |
+| Column | Missing | Strategy | Reason |
 |---|---|---|---|
-| LoanAmount | 22 | **Median** |
-| Loan_Amount_Term | 14 | **Mode** | 
-| Credit_History | 50 | **Mode** | 
-| Gender, Married, etc. | Few | **Mode** | 
+| LoanAmount | 22 | **Median** | Right-skewed with outliers |
+| Loan_Amount_Term | 14 | **Mode** | Most loans are 360 months |
+| Credit_History | 50 | **Mode** | Binary column, mode = 1 |
+| Gender, Married, etc. | Few | **Mode** | Categorical columns |
 
 *Feature Selection*:
 features = ['ApplicantIncome', 'CoapplicantIncome', 'LoanAmount','Loan_Amount_Term', 'Credit_History']
