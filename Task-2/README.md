@@ -5,7 +5,7 @@ The goal of this project is to build a machine learning model that assesses cred
 determining whether a loan applicant will default or successfully repay their loan, based on their income,education etc.
 
 Our target variable Loan_Status indicates:
-1 (Y) — Loan Approved / No Default
+1 (Y) — Loan Approved / No Default   |
 0 (N) — Loan Rejected / Default Risk
 
 **Approach:**
