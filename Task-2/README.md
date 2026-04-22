@@ -10,7 +10,7 @@ Our target variable Loan_Status indicates:
 
 **Approach:**
 Missing values were found across multiple columns such as:
-| Column | Missing | Strategy | Reason |
+| Column | Missing | Strategy | 
 |---|---|---|---|
 | LoanAmount | 22 | **Median** |
 | Loan_Amount_Term | 14 | **Mode** | 
