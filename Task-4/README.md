@@ -28,12 +28,15 @@ Model learned a weighted combination of all features to predict charges.
 
 4. Visualizations
 Three key visualizations were created to understand feature impact:
+<br>
 a) BMI vs Charges: Shows smokers form a high-charge cluster; BMI has a steeper effect for smokers
+<br>
 b) Age vs Charges: Reveals three charge tiers: non-smokers (low), moderate smokers, high-BMI smokers
+<br>
 c) Charges by Smoking Status: Histogram showing non-smokers cluster under $15,000; smokers spread $15,000–$60,000+.
 
 
-5. Model Evaluation
+6. Model Evaluation
 Evaluated on the test set using three metrics:
 
 pythony_pred = model.predict(X_test_sc)
@@ -44,7 +47,9 @@ print("R²:  ",  r2_score(y_test, y_pred))
 **Results/Insights:**
 
 MAE = $4,186      Average prediction error of ~$4,186 per patient
+<br>
 RMSE = $5,799     Larger errors on high-charge outlier patients
+<br>
 R² = 0.783Model   explains 78.3% of variance in charges.
 
 Smoking is the dominant predictor: smokers consistently pay $20,000–$25,000 more than non-smokers, regardless of age or BMI. It was the highest-weighted feature in the model.
