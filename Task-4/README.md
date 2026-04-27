@@ -15,8 +15,7 @@ Confirmed no null values across all columns.
 <br>
 Identified that charges is right-skewed (mean $13,270 >> median $9,382), indicating a small group of high-cost patients pulls the average up.
 <br>
-
-3. Data Preprocessing
+2. Data Preprocessing
 <br>
 Encoded categorical columns using LabelEncoder:
 <br>
@@ -33,17 +32,14 @@ Applied an 80/20 train-test split with random_state=42
 <br>
 Scaled features using StandardScaler to normalize the input range
 <br>
-
 3. Model Training
-4. <br>
+ <br>
 Trained a Linear Regression model using sklearn.linear_model.LinearRegression.
 <br>
 Model learned a weighted combination of all features to predict charges.
 <br>
-
-
 5. Visualizations
-6. <br>
+ <br>
 Three key visualizations were created to understand feature impact:
 <br>
 a) BMI vs Charges: Shows smokers form a high-charge cluster; BMI has a steeper effect for smokers
@@ -51,10 +47,8 @@ a) BMI vs Charges: Shows smokers form a high-charge cluster; BMI has a steeper e
 b) Age vs Charges: Reveals three charge tiers: non-smokers (low), moderate smokers, high-BMI smokers
 <br>
 c) Charges by Smoking Status: Histogram showing non-smokers cluster under $15,000; smokers spread $15,000–$60,000+.
-
-
-7. Model Evaluation
-8. <br>
+6. Model Evaluation
+ <br>
 Evaluated on the test set using three metrics:
 <br>
 pythony_pred = model.predict(X_test_sc)
