@@ -3,7 +3,8 @@
 **Objective::**
 Predict which customers are likely to accept a personal loan offer using the UCI Bank Marketing Dataset. The goal is to build a classification model that can help identify high-potential customers and improve campaign targeting efficiency.
 <br>
-
+<br>
+<br>
 **Approach:**
 
 1. Data Exploration
@@ -24,7 +25,8 @@ Trained and compared two classifiers:
 <br>
 Logistic Regression — with class balancing and feature scaling<br>
 Decision Tree — with max depth of 5 and class balancing <br>
-
+<br>
+<br>
 
 **Results and Insights:**
 
