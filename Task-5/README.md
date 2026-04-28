@@ -6,19 +6,19 @@ Predict which customers are likely to accept a personal loan offer using the UCI
 <br>
 <br>
 **Approach:**
-
+<br>
 1. Data Exploration
 <br>
 Explored key features including age, job, marital status, and education <br>
 Visualized loan acceptance rates across different customer segments <br>
 Identified class imbalance — the majority of customers reject the offer <br>
-
+<br>
 2. Preprocessing
 <br>
 Label-encoded all categorical variables<br>
 Applied StandardScaler for Logistic Regression <br>
 Used stratified train/test split (80/20) to preserve class distribution <br>
-
+<br>
 3. Modeling
 <br>
 Trained and compared two classifiers:
